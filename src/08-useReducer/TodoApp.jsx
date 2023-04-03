@@ -6,11 +6,11 @@ import { useTodo } from './useTodo';
 
 export const TodoApp = () => {
 
-    const { todos, handleDeletTodo, handleToggleTodo, handleNewTodo} = useTodo();
+    const { todos, handleDeletTodo, handleToggleTodo, handleNewTodo, todosCount, pendingTodosCount} = useTodo();
 
   return (
    <>
-   <h1>TodoApp (10) <small>Pendientes: 2 </small></h1>
+   <h1>TodoApp { todosCount } <small>Pendientes: { pendingTodosCount } </small></h1>
    <hr/>
 
    <div className='row'>

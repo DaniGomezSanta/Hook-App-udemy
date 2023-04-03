@@ -18,6 +18,9 @@ export const todoReducer = ( initialState = [] , action ) => {
                 }
                 return todo; 
             })
+
+            case 'Todo Count':
+                return[ ...initialState.length  ]
             
     
         default:
